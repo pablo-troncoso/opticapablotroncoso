@@ -1,9 +1,6 @@
-export default function NavLink() {
-  function handleClick(){
-    console.log("click");
-  }    
-
+export default function NavLink(props) {
+  console.log(props);
   return (
-    <div onClick={handleClick}>NavLink</div>
+      <li>{props.title}</li>
   )
 }
